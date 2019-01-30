@@ -1,142 +1,144 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <link href="report.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <link href="report.css" rel="stylesheet" />
     <title>Report</title>
-    <meta name="description" content="Report example">
+    <meta name="description" content="Report example" />
   </head>
 
   <body>
     <article id="cover">
-      <h1>Rapport</h1>
+      <h1 class="coverTitle">Rapport</h1>
       <address>
-        ASSYSTEM Company
-        Tour Egée, 11 Allée de l'Arche, 
-        92400 Courbevoie (La defense)
+        ASSYSTEM Company Tour Egée, 11 Allée de l'Arche, 92400 Courbevoie (La
+        defense)
       </address>
       <address>
-        mbrahimi@assystem.com
-        +33 X XX XX XX XX
-        https://assystem.com
+        mbrahimi@assystem.com +33 X XX XX XX XX https://assystem.com
       </address>
     </article>
 
     <article id="competences">
-          <h2 id="competences-title"> Rapport journalier du ''' + objDate + ''' </h2>
-    
-          <h3>Analyse des cycles.</h3>
+      <h2 id="competences-title">
+        Rapport journalier du ''' + objDate + '''
+      </h2>
 
-          <div style="display:flex">
-            <div class="left_frame">
-              <a href="''' + first_plot_url_1 + '''" target="_blank"> click on the image
-                <img src="''' + first_plot_url_1 + '''.png">
-              </a>
-            </div>
-            <div class="right_frame">
-              <a href="''' + first_plot_url_0 + '''" target="_blank"> click on the image
-                <img src="''' + first_plot_url_0 + '''.png">
-              </a>
-            </div>
-          </div>
-          
-          <h2>Analyse des durées de fonctionnement</h2>
-          <div style="display:flex">
-            <div class="left_frame">
-              <a href="''' + second_plot_url_1 + '''" target="_blank"> click on the image
-                <img src="''' + second_plot_url_1 + '''.png">
-              </a>
-            </div>
-            <div class="right_frame">
-              <a href="''' + second_plot_url_0 + '''" target="_blank"> click on the image
-                <img src="''' + second_plot_url_0 + '''.png">
-              </a>
-            </div>
-          </div>
-          
-          <h2>Recommandation</h2>
-          <h3>Selon les résultats observés la recommendation est la suivante </h3>
-          <table class="table table-condensed">
-            <thead class="thead-dark">
-              <th scope="col">Jour</th>
-              <th scope="col">Recommandation</th>
-            </thead>
-            <tbody>
-              <tr>
-                <td>'''+ result_query_3['date'].loc[0] +'''</td>
-                <td>'''+ result_query_3['comments'].loc[0]+'''</td>
-              </tr>
-              <tr>
-                <td>'''+ result_query_3['date'].loc[1] +'''</td>
-                <td>'''+ result_query_3['comments'].loc[1]+'''</td>
-              </tr>
-              <tr>
-                <td>'''+ result_query_3['date'].loc[2] +'''</td>
-                <td>'''+ result_query_3['comments'].loc[2]+'''</td>
-              </tr>
-            </tbody>
-          </table>
-          
-          <h2>Derniers enregistrés</h2>
-          <h3> Denier cycle normal enregistré </h3>
-          <div style="display:flex">
-            <a href="''' + third_plot_url + '''" target="_blank"> click on the image
-              <img src="''' + third_plot_url + '''.png">
-            </a>
-          </div>
-          <h3> Denier cycle enregistré remontée verticale de type 1</h3>
-          <div style="display:flex">
-            <a href="''' + fourth_plot_url + '''" target="_blank"> click on the image
-              <img src="''' + fourth_plot_url + '''.png">
-            </a>
-          </div>
-          <h3> Denier cycle enregistré remontée verticale de type 2</h3>
-          <div style="display:flex">
-            <a href="''' + fifth_plot_url + '''" target="_blank"> click on the image
-              <img src="''' + fifth_plot_url + '''.png">
-            </a>
-          </div>
-    
-          <section id="table-content">
-            <h4>Table of contents</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi ante, tincidunt quis vehicula
-              sed, vehicula sed augue. Cras eget ante turpis.
-            </p>
-          </section>
-    
-          <section id="heading">
-            <h4>Heading titles and page counters</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi ante, tincidunt quis vehicula
-              sed, vehicula sed augue. Cras eget ante turpis.
-            </p>
-          </section>
-    
-          <section id="multi-columns">
-            <h4>Multi-column text</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi ante, tincidunt quis vehicula
-              sed, vehicula sed augue. Cras eget ante turpis.
-            </p>
-          </section>
-    
-          <section id="internal-links">
-            <h4>Internal links</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi ante, tincidunt quis vehicula
-              sed, vehicula sed augue. Cras eget ante turpis.
-            </p>
-          </section>
-    
-          <section id="style">
-            <h4>Different page types</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi ante, tincidunt quis vehicula
-              sed, vehicula sed augue. Cras eget ante turpis.
-            </p>
-          </section>
-        </article>
+      <h3>Analyse des cycles.</h3>
+
+      <div style="display:flex">
+        <div class="left_frame">
+          <a href="''' + first_plot_url_1 + '''" target="_blank">
+            <img src="images/img1.png" />
+          </a>
+        </div>
+        <div class="right_frame">
+          <a href="''' + first_plot_url_0 + '''" target="_blank">
+            <img src="images/img1.png" />
+          </a>
+        </div>
+      </div>
+
+      <h2>Analyse des durées de fonctionnement</h2>
+      <div style="display:flex">
+        <div class="left_frame">
+          <a href="''' + second_plot_url_1 + '''" target="_blank">
+            <img src="images/img1.png" />
+          </a>
+        </div>
+        <div class="right_frame">
+          <a href="''' + second_plot_url_0 + '''" target="_blank">
+            <img src="images/img1.png" />
+          </a>
+        </div>
+      </div>
+
+      <h2>Recommandation</h2>
+      <h3>Selon les résultats observés la recommendation est la suivante </h3>
+      <table class="table table-condensed">
+        <thead class="thead-dark">
+          <th scope="col">Jour</th> <th scope="col">Recommandation</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>'''+ result_query_3['date'].loc[0] +'''</td>
+            <td>'''+ result_query_3['comments'].loc[0]+'''</td>
+          </tr>
+          <tr>
+            <td>'''+ result_query_3['date'].loc[1] +'''</td>
+            <td>'''+ result_query_3['comments'].loc[1]+'''</td>
+          </tr>
+          <tr>
+            <td>'''+ result_query_3['date'].loc[2] +'''</td>
+            <td>'''+ result_query_3['comments'].loc[2]+'''</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Derniers enregistrés</h2> <h3> Denier cycle normal enregistré </h3>
+      <div style="display:flex">
+        <a href="''' + third_plot_url + '''" target="_blank">
+          <img src="images/img1.png" />
+        </a>
+      </div>
+      <h3> Denier cycle enregistré remontée verticale de type 1</h3>
+      <div style="display:flex">
+        <a href="''' + fourth_plot_url + '''" target="_blank">
+          <img src="images/img1.png" />
+        </a>
+      </div>
+      <h3> Denier cycle enregistré remontée verticale de type 2</h3>
+      <div style="display:flex">
+        <a href="''' + fifth_plot_url + '''" target="_blank">
+          <img src="images/img1.png" />
+        </a>
+      </div>
+
+      <section id="table-content">
+        <h4>Table of contents</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi
+          ante, tincidunt quis vehicula sed, vehicula sed augue. Cras eget ante
+          turpis.
+        </p>
+      </section>
+
+      <section id="heading">
+        <h4>Heading titles and page counters</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi
+          ante, tincidunt quis vehicula sed, vehicula sed augue. Cras eget ante
+          turpis.
+        </p>
+      </section>
+
+      <section id="multi-columns">
+        <h4>Multi-column text</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi
+          ante, tincidunt quis vehicula sed, vehicula sed augue. Cras eget ante
+          turpis.
+        </p>
+      </section>
+
+      <section id="internal-links">
+        <h4>Internal links</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi
+          ante, tincidunt quis vehicula sed, vehicula sed augue. Cras eget ante
+          turpis.
+        </p>
+      </section>
+
+      <section id="style">
+        <h4>Different page types</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi
+          ante, tincidunt quis vehicula sed, vehicula sed augue. Cras eget ante
+          turpis.
+        </p>
+      </section>
+    </article>
 
     <!-- <article id="contents">
       <h2>Table of contents</h2>
