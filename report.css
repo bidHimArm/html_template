@@ -79,7 +79,15 @@
     content: none; }
   @top-right {
     content: none; } }
-
+.container{
+  display: flex;
+}
+.left_frame {
+  width: 62%;
+}
+.right_frame {
+  width: 38%;
+}
 html {
   color: #393939;
   font-family: Fira Sans;
