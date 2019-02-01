@@ -82,11 +82,17 @@
 .container{
   display: flex;
 }
+.container img{
+  width: 100%;
+}
 .left_frame {
-  width: 62%;
+  width: 38%;
 }
 .right_frame {
-  width: 38%;
+  width: 62%;
+}
+.left_frame img, .right_frame img{
+  width: 100%;
 }
 html {
   color: #393939;
