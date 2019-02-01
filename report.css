@@ -94,6 +94,12 @@
 .left_frame img, .right_frame img{
   width: 100%;
 }
+.middle_frame {
+  width: 100%;
+}
+.middle_frame img{
+  width: 90%;
+}
 html {
   color: #393939;
   font-family: Fira Sans;
