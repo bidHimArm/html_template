@@ -7,33 +7,33 @@ body {
 @font-face {
   font-family: Fira Sans;
   font-weight: 400;
-  src: url(FiraSans-Regular.otf);
+  src: url('../ressources/fonts/FiraSans-Regular.otf');
 }
 
 @font-face {
   font-family: Fira Sans;
   font-style: italic;
   font-weight: 400;
-  src: url(FiraSans-Italic.otf);
+  src: url('../ressources/fonts/FiraSans-Italic.otf');
 }
 
 @font-face {
   font-family: Fira Sans;
   font-weight: 300;
-  src: url(FiraSans-Light.otf);
+  src: url('../ressources/fonts/FiraSans-Light.otf');
 }
 
 @font-face {
   font-family: Fira Sans;
   font-style: italic;
   font-weight: 300;
-  src: url(FiraSans-LightItalic.otf);
+  src: url('../ressources/fonts/FiraSans-LightItalic.otf');
 }
 
 @font-face {
   font-family: Fira Sans;
   font-weight: bold;
-  src: url(FiraSans-Bold.otf);
+  src: url('../ressources/fonts/FiraSans-Bold.otf');
 }
 
 @page {
@@ -108,7 +108,7 @@ body {
 .container {
   display: flex;
 }
-.container img{
+.container img {
   width: 100%;
 }
 .left_frame {
@@ -120,13 +120,14 @@ img {
 .right_frame {
   width: 75%;
 }
-.left_frame img, .right_frame img{
+.left_frame img,
+.right_frame img {
   width: 100%;
 }
 .middle_frame {
   width: 100%;
 }
-.middle_frame img{
+.middle_frame img {
   width: 90%;
 }
 html {
@@ -137,7 +138,7 @@ html {
   line-height: 1.5;
 }
 html body h1 {
-  color: #e12d2d;
+  color: #f7f7f7;
   font-size: 38pt;
   margin: 5cm 2cm 0 2cm;
   page: no-chapter;
@@ -162,7 +163,7 @@ html body h4 {
   font-size: 13pt;
 }
 html body article#cover {
-  background-image: url('./images/triangles.svg');
+  background-image: url('../ressources/images/triangles.svg');
   background-repeat: no-repeat;
   background-size: 297mm, 297mm;
   align-content: space-between;
@@ -174,7 +175,7 @@ html body article#cover {
   color: white;
 }
 html body article#cover address {
-  background: #e12d2d;
+  background: #f7f7f7;
   flex: 1 50%;
   margin: 0 -2cm;
   padding: 0.5cm 0;
@@ -254,7 +255,8 @@ html body article#competences section {
   padding: 0.5cm 0;
 }
 html body article#competences section#table-content::before {
-  background: url(table-content.svg) no-repeat center #e12d2d;
+  background: url('../ressources/images/table-content.svg') no-repeat center
+    #e12d2d;
   background-size: 50%;
   content: '';
   display: inline-block;
@@ -265,7 +267,7 @@ html body article#competences section#table-content::before {
   width: 2cm;
 }
 html body article#competences section#heading::before {
-  background: url(heading.svg) no-repeat center #e12d2d;
+  background: url('../ressources/images/heading.svg') no-repeat center #e12d2d;
   background-size: 50%;
   content: '';
   display: inline-block;
@@ -276,7 +278,8 @@ html body article#competences section#heading::before {
   width: 2cm;
 }
 html body article#competences section#multi-columns::before {
-  background: url(multi-columns.svg) no-repeat center #e12d2d;
+  background: url('../ressources/images/multi-columns.svg') no-repeat center
+    #e12d2d;
   background-size: 50%;
   content: '';
   display: inline-block;
@@ -287,7 +290,8 @@ html body article#competences section#multi-columns::before {
   width: 2cm;
 }
 html body article#competences section#internal-links::before {
-  background: url(internal-links.svg) no-repeat center #e12d2d;
+  background: url('../ressources/images/internal-links.svg') no-repeat center
+    #e12d2d;
   background-size: 50%;
   content: '';
   display: inline-block;
@@ -298,7 +302,7 @@ html body article#competences section#internal-links::before {
   width: 2cm;
 }
 html body article#competences section#style::before {
-  background: url(style.svg) no-repeat center #e12d2d;
+  background: url('../ressources/images/style.svg') no-repeat center #e12d2d;
   background-size: 50%;
   content: '';
   display: inline-block;
