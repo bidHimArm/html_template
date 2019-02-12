@@ -1,9 +1,9 @@
 @charset "UTF-8";
-body {
+/* body {
   margin: 0;
   overflow-y: scroll;
   overflow-x: hidden;
-}
+} */
 @font-face {
   font-family: Fira Sans;
   font-weight: 400;
@@ -185,6 +185,7 @@ html body article#cover address {
 html body article#cover address:first-of-type {
   padding-left: 2cm;
 }
+
 html body article#contents {
   break-before: right;
   break-after: left;
@@ -462,8 +463,8 @@ html body article#typography section#figures #old-tabular {
 
 #logoAssystem {
   z-index: 3000;
-  width: 5cm;
-  height: 5cm;
+  width: 5.192cm;
+  height: 4cm;
   position: relative;
   left: 15cm;
 }
