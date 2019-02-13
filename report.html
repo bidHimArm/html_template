@@ -14,7 +14,8 @@
         id="logoAssystem"
         alt="logo assystem"
       />
-      <h1>Rapport journalier du ''' + objDate + '''</h1>
+      <h1>Rapport journalier du ''' + objDate + ''' </h1>
+      <h1>1 CFI 018 DG</h1>
       <address>
         ASSYSTEM Company
         Tour Egée, 11 Allée de l'Arche,
@@ -32,10 +33,12 @@
 
       <div class="container">
         <div class="left_frame">
-          <a href="" target="_blank">
-            click on the image
-            <img src="ressources/images/barchart_1.png" />
-          </a>
+          <b>Nb de cycle en fonctionnement normal </b>  
+          <p class="borderbox"> '''+ result_query_1bis.iloc[0]["Normal"] +''' </p>
+          <b>Nb de cycle en fonctionnement marche forcée</b>
+          <p class="borderbox"> '''+ result_query_1bis.iloc[0]["Defaut"] +''' </p>
+          <b> Nb de cycle en défaut </b>
+          <p class="borderbox"> '''+ result_query_1bis.iloc[0]["Marche_forcée"] +''' </p>           
         </div>
         <div class="right_frame">
           <a href="" target="_blank">
@@ -48,10 +51,12 @@
       <h4>Analyse des durées de fonctionnement</h4>
       <div class="container">
         <div class="left_frame">
-          <a href="" target="_blank">
-            click on the image
-            <img src="ressources/images/barchart_1.png" />
-          </a>
+          <b>Durée de fonctionnement en mode normal </b>
+          <p class="borderbox"> '''+ result_query_1bis.iloc[0]["Durée_normal"] +''' </p>
+          <b>Durée de fonctionnement en marche forcée</b>
+          <p class="borderbox"> '''+ result_query_1bis.iloc[0]["Marche_forcée"] +''' </p>
+          <b> Durée dégrilleur à l’arrêt </b>
+          <p class="borderbox"> '''+ result_query_1bis.iloc[0]["Durée_arrêt"] +''' </p>
         </div>
         <div class="right_frame">
           <a href="" target="_blank">
